@@ -1,0 +1,25 @@
+[package]
+name = "merkle"
+version = "0.1.0"
+authors = ["mrsha"]
+edition = "2018"
+harness = false
+
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+crypto-hash = "0.3.4"
+rand = "0.8.3"
+rand_chacha = "0.3.1"
+rand_distr = "0.4.1"
+
+
+
+[dev-dependencies]
+criterion = "0.3"
+
+[[bench]]
+name = "benchmark"
+harness = false
